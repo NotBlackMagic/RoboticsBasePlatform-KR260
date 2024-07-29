@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+running build
+running build_py
+copying locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+creating /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+copying locomotion/Drivers/__init__.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+copying locomotion/Drivers/DriverIBus.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+copying locomotion/Drivers/DriverPWM.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/__init__.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/DriverIBus.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/DriverPWM.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/DriverIBus.py to DriverIBus.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/DriverPWM.py to DriverPWM.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/rc_remote_control.py to rc_remote_control.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+running install_scripts
+Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+Installing rc_remote_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'

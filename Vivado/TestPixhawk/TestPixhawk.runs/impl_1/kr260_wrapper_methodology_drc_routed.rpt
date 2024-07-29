@@ -1,0 +1,534 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 20 16:09:47 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_methodology -file kr260_wrapper_methodology_drc_routed.rpt -pb kr260_wrapper_methodology_drc_routed.pb -rpx kr260_wrapper_methodology_drc_routed.rpx
+| Design       : kr260_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 99
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-2  | Critical Warning | Invalid primary clock source pin                   | 1          |
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                      | 95         |
+| CLKC-40   | Advisory         | Substitute PLLE4 for MMCME4 check                  | 1          |
+| CLKC-56   | Advisory         | MMCME4 with global clock driver has no LOC         | 1          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock kr260_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate pin kr260_i/clk_wiz_0/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock kr260_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_pl_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ENC_CAP0 relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[0] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[10] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[11] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[12] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[13] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[14] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[15] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[16] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[17] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[18] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[19] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[1] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[20] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[21] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[22] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[23] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[24] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[25] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[26] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[27] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[28] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[29] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[2] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[30] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[31] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[3] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[4] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[5] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[6] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[7] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[8] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An input delay is missing on GPIO0_tri_io[9] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An input delay is missing on GPS0_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An input delay is missing on GPS0_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An input delay is missing on GPS0_UART_rxd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An input delay is missing on I2C0_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An input delay is missing on I2C0_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An input delay is missing on IMU0_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An input delay is missing on IMU0_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An input delay is missing on IMU1_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An input delay is missing on IMU1_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An input delay is missing on RC_SBUS0_rxd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An input delay is missing on TELEM0_rxd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An input delay is missing on TELEM1_rxd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An input delay is missing on UART0_rxd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[0] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[10] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[11] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[12] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[13] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[14] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[15] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[16] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[17] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[18] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[19] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[1] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[20] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[21] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[22] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[23] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[24] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[25] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[26] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[27] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[28] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[29] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[2] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#70 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[30] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#71 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[31] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#72 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[3] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#73 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[4] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#74 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[5] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#75 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[6] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#76 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[7] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#77 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[8] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#78 Warning
+Missing input or output delay  
+An output delay is missing on GPIO0_tri_io[9] relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#79 Warning
+Missing input or output delay  
+An output delay is missing on GPS0_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#80 Warning
+Missing input or output delay  
+An output delay is missing on GPS0_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#81 Warning
+Missing input or output delay  
+An output delay is missing on GPS0_UART_txd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#82 Warning
+Missing input or output delay  
+An output delay is missing on I2C0_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#83 Warning
+Missing input or output delay  
+An output delay is missing on I2C0_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#84 Warning
+Missing input or output delay  
+An output delay is missing on IMU0_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#85 Warning
+Missing input or output delay  
+An output delay is missing on IMU0_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#86 Warning
+Missing input or output delay  
+An output delay is missing on IMU1_I2C_scl_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#87 Warning
+Missing input or output delay  
+An output delay is missing on IMU1_I2C_sda_io relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#88 Warning
+Missing input or output delay  
+An output delay is missing on RC_PWM0 relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#89 Warning
+Missing input or output delay  
+An output delay is missing on RC_PWM1 relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#90 Warning
+Missing input or output delay  
+An output delay is missing on RC_PWM2 relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#91 Warning
+Missing input or output delay  
+An output delay is missing on RC_PWM3 relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#92 Warning
+Missing input or output delay  
+An output delay is missing on RC_SBUS0_txd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#93 Warning
+Missing input or output delay  
+An output delay is missing on TELEM0_txd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#94 Warning
+Missing input or output delay  
+An output delay is missing on TELEM1_txd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+TIMING-18#95 Warning
+Missing input or output delay  
+An output delay is missing on UART0_txd relative to the rising and/or falling clock edge(s) of kr260_i/clk_wiz_0/inst/clk_in1.
+Related violations: <none>
+
+CLKC-40#1 Advisory
+Substitute PLLE4 for MMCME4 check  
+The MMCME4 cell kr260_i/clk_wiz_0/inst/mmcme4_adv_inst has a single input clock whose source driver, UNKNOWN, is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell kr260_i/clk_wiz_0/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) kr260_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+

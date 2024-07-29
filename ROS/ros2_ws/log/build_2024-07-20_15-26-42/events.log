@@ -1,0 +1,152 @@
+[0.000000] (-) TimerEvent: {}
+[0.002035] (-) JobUnselected: {'identifier': 'locomotion'}
+[0.002892] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict()}
+[0.003088] (perception) JobStarted: {'identifier': 'perception'}
+[0.098616] (-) TimerEvent: {}
+[0.199522] (-) TimerEvent: {}
+[0.300433] (-) TimerEvent: {}
+[0.401276] (-) TimerEvent: {}
+[0.502101] (-) TimerEvent: {}
+[0.603034] (-) TimerEvent: {}
+[0.703914] (-) TimerEvent: {}
+[0.804759] (-) TimerEvent: {}
+[0.905627] (-) TimerEvent: {}
+[1.006537] (-) TimerEvent: {}
+[1.107432] (-) TimerEvent: {}
+[1.208274] (-) TimerEvent: {}
+[1.309101] (-) TimerEvent: {}
+[1.410012] (-) TimerEvent: {}
+[1.510916] (-) TimerEvent: {}
+[1.611858] (-) TimerEvent: {}
+[1.712810] (-) TimerEvent: {}
+[1.813664] (-) TimerEvent: {}
+[1.914579] (-) TimerEvent: {}
+[2.015444] (-) TimerEvent: {}
+[2.116317] (-) TimerEvent: {}
+[2.217264] (-) TimerEvent: {}
+[2.318294] (-) TimerEvent: {}
+[2.419415] (-) TimerEvent: {}
+[2.520326] (-) TimerEvent: {}
+[2.621202] (-) TimerEvent: {}
+[2.722089] (-) TimerEvent: {}
+[2.822957] (-) TimerEvent: {}
+[2.923881] (-) TimerEvent: {}
+[3.024745] (-) TimerEvent: {}
+[3.125629] (-) TimerEvent: {}
+[3.226467] (-) TimerEvent: {}
+[3.327351] (-) TimerEvent: {}
+[3.428230] (-) TimerEvent: {}
+[3.529118] (-) TimerEvent: {}
+[3.629959] (-) TimerEvent: {}
+[3.730794] (-) TimerEvent: {}
+[3.831667] (-) TimerEvent: {}
+[3.932492] (-) TimerEvent: {}
+[4.033354] (-) TimerEvent: {}
+[4.134206] (-) TimerEvent: {}
+[4.235189] (-) TimerEvent: {}
+[4.336131] (-) TimerEvent: {}
+[4.437066] (-) TimerEvent: {}
+[4.538037] (-) TimerEvent: {}
+[4.638911] (-) TimerEvent: {}
+[4.739779] (-) TimerEvent: {}
+[4.840706] (-) TimerEvent: {}
+[4.941592] (-) TimerEvent: {}
+[5.042481] (-) TimerEvent: {}
+[5.143487] (-) TimerEvent: {}
+[5.244434] (-) TimerEvent: {}
+[5.345279] (-) TimerEvent: {}
+[5.446204] (-) TimerEvent: {}
+[5.547069] (-) TimerEvent: {}
+[5.647931] (-) TimerEvent: {}
+[5.748814] (-) TimerEvent: {}
+[5.849674] (-) TimerEvent: {}
+[5.950599] (-) TimerEvent: {}
+[6.051502] (-) TimerEvent: {}
+[6.152364] (-) TimerEvent: {}
+[6.253300] (-) TimerEvent: {}
+[6.354276] (-) TimerEvent: {}
+[6.455180] (-) TimerEvent: {}
+[6.556049] (-) TimerEvent: {}
+[6.656905] (-) TimerEvent: {}
+[6.757842] (-) TimerEvent: {}
+[6.858775] (-) TimerEvent: {}
+[6.959854] (-) TimerEvent: {}
+[7.060805] (-) TimerEvent: {}
+[7.161658] (-) TimerEvent: {}
+[7.262539] (-) TimerEvent: {}
+[7.363497] (-) TimerEvent: {}
+[7.464344] (-) TimerEvent: {}
+[7.565191] (-) TimerEvent: {}
+[7.666054] (-) TimerEvent: {}
+[7.766948] (-) TimerEvent: {}
+[7.867838] (-) TimerEvent: {}
+[7.968764] (-) TimerEvent: {}
+[8.069600] (-) TimerEvent: {}
+[8.170503] (-) TimerEvent: {}
+[8.271451] (-) TimerEvent: {}
+[8.372369] (-) TimerEvent: {}
+[8.473232] (-) TimerEvent: {}
+[8.574192] (-) TimerEvent: {}
+[8.675241] (-) TimerEvent: {}
+[8.776274] (-) TimerEvent: {}
+[8.877279] (-) TimerEvent: {}
+[8.978297] (-) TimerEvent: {}
+[9.079337] (-) TimerEvent: {}
+[9.180310] (-) TimerEvent: {}
+[9.281310] (-) TimerEvent: {}
+[9.382303] (-) TimerEvent: {}
+[9.483368] (-) TimerEvent: {}
+[9.584354] (-) TimerEvent: {}
+[9.616703] (perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/perception/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/perception', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'LC_TIME': 'C.UTF-8', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'LC_MONETARY': 'C.UTF-8', 'XILINX_XRT': '/usr', 'LC_CTYPE': 'C.UTF-8', 'PYNQ_JUPYTER_NOTEBOOKS': '/root/jupyter_notebooks', 'COLORTERM': 'truecolor', 'BOARD': 'KR260', 'DEBUGINFOD_URLS': '', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/share/pynq-venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/local/share/pynq-venv/bin/microblazeel-xilinx-elf/bin/', 'LC_ADDRESS': 'C.UTF-8', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'VIRTUAL_ENV_PROMPT': '(pynq-venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/perception:/home/ubuntu/ros2_ws/install/locomotion:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'SUDO_USER': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'VIRTUAL_ENV': '/usr/local/share/pynq-venv', 'PWD': '/home/ubuntu/ros2_ws/build/perception', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/share/pynq-venv/lib/python3.10/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1'}, 'shell': False}
+[9.684562] (-) TimerEvent: {}
+[9.785494] (-) TimerEvent: {}
+[9.886371] (-) TimerEvent: {}
+[9.987209] (-) TimerEvent: {}
+[10.088097] (-) TimerEvent: {}
+[10.188977] (-) TimerEvent: {}
+[10.289851] (-) TimerEvent: {}
+[10.390697] (-) TimerEvent: {}
+[10.491618] (-) TimerEvent: {}
+[10.592498] (-) TimerEvent: {}
+[10.693358] (-) TimerEvent: {}
+[10.794211] (-) TimerEvent: {}
+[10.895061] (-) TimerEvent: {}
+[10.995910] (-) TimerEvent: {}
+[11.096776] (-) TimerEvent: {}
+[11.197671] (-) TimerEvent: {}
+[11.298560] (-) TimerEvent: {}
+[11.399496] (-) TimerEvent: {}
+[11.500352] (-) TimerEvent: {}
+[11.601213] (-) TimerEvent: {}
+[11.702159] (-) TimerEvent: {}
+[11.803038] (-) TimerEvent: {}
+[11.805668] (perception) StdoutLine: {'line': b'running egg_info\n'}
+[11.810732] (perception) StdoutLine: {'line': b'writing ../../build/perception/perception.egg-info/PKG-INFO\n'}
+[11.812210] (perception) StdoutLine: {'line': b'writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt\n'}
+[11.813200] (perception) StdoutLine: {'line': b'writing entry points to ../../build/perception/perception.egg-info/entry_points.txt\n'}
+[11.813977] (perception) StdoutLine: {'line': b'writing requirements to ../../build/perception/perception.egg-info/requires.txt\n'}
+[11.814705] (perception) StdoutLine: {'line': b'writing top-level names to ../../build/perception/perception.egg-info/top_level.txt\n'}
+[11.865336] (perception) StdoutLine: {'line': b"reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[11.871709] (perception) StdoutLine: {'line': b"writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[11.872630] (perception) StdoutLine: {'line': b'running build\n'}
+[11.873175] (perception) StdoutLine: {'line': b'running build_py\n'}
+[11.873876] (perception) StdoutLine: {'line': b'copying perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception\n'}
+[11.875561] (perception) StdoutLine: {'line': b'running install\n'}
+[11.877480] (perception) StdoutLine: {'line': b'running install_lib\n'}
+[11.882117] (perception) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception\n'}
+[11.885756] (perception) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/gnss_receiver.py to gnss_receiver.cpython-310.pyc\n'}
+[11.889348] (perception) StdoutLine: {'line': b'running install_data\n'}
+[11.890784] (perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.901130] (perception) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[11.902785] (perception) StdoutLine: {'line': b'Copying ../../build/perception/perception.egg-info to /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info\n'}
+[11.903451] (-) TimerEvent: {}
+[11.907837] (perception) StdoutLine: {'line': b'running install_scripts\n'}
+[12.003667] (-) TimerEvent: {}
+[12.034010] (perception) StdoutLine: {'line': b'Installing gnss_receiver script to /home/ubuntu/ros2_ws/install/perception/lib/perception\n'}
+[12.036101] (perception) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/perception/install.log'\n"}
+[12.103949] (-) TimerEvent: {}
+[12.204957] (-) TimerEvent: {}
+[12.253266] (perception) CommandEnded: {'returncode': 0}
+[12.305159] (-) TimerEvent: {}
+[12.317820] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[12.321011] (-) EventReactorShutdown: {}

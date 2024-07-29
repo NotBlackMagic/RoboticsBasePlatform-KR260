@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../TestIO.gen/sources_1/bd/kr260/ipshared/ec67/hdl" --include "../../../../TestIO.gen/sources_1/bd/kr260/ipshared/f261/hdl" --include "../../../../TestIO.gen/sources_1/bd/kr260/ipshared/c2c6" \
+"../../../bd/kr260/ip/kr260_zynq_ultra_ps_e_0_0/sim/kr260_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/kr260/ip/kr260_clk_wiz_0_0/kr260_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/kr260/ip/kr260_clk_wiz_0_0/kr260_clk_wiz_0_0.v" \
+"../../../bd/kr260/ip/kr260_xbar_0/sim/kr260_xbar_0.v" \
+"../../../bd/kr260/ip/kr260_xlslice_0_0/sim/kr260_xlslice_0_0.v" \
+"../../../bd/kr260/ip/kr260_xlconcat_0_0/sim/kr260_xlconcat_0_0.v" \
+"../../../bd/kr260/sim/kr260.v" \
+"../../../bd/kr260/ip/kr260_auto_pc_0/sim/kr260_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

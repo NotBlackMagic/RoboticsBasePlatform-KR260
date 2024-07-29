@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/locomotion/locomotion.egg-info
+writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/build/locomotion/build
+creating /home/ubuntu/ros2_ws/build/locomotion/build/lib
+creating /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+copying locomotion/__init__.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+copying locomotion/keyboard_control.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/__init__.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/keyboard_control.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/keyboard_control.py to keyboard_control.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index
+creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index/packages
+copying resource/locomotion -> /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/install/locomotion/share/locomotion
+running install_egg_info
+Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+running install_scripts
+Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'

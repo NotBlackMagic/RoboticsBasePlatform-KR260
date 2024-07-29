@@ -1,0 +1,31 @@
+[4.439s] Invoking command in '/home/ubuntu/ros2_ws/src/locomotion': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data
+[6.162s] running egg_info
+[6.168s] writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+[6.169s] writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+[6.170s] writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+[6.171s] writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+[6.173s] writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+[6.185s] reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.187s] adding license file 'LICENSE'
+[6.192s] writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.193s] running build
+[6.193s] running build_py
+[6.194s] copying locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.198s] running install
+[6.199s] running install_lib
+[6.204s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.210s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/velocity_controller.py to velocity_controller.cpython-310.pyc
+[6.222s] running install_data
+[6.222s] running install_egg_info
+[6.232s] removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)
+[6.233s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/SOURCES.txt'
+[6.234s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/PKG-INFO'
+[6.235s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/top_level.txt'
+[6.235s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/entry_points.txt'
+[6.236s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/zip-safe'
+[6.236s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/dependency_links.txt'
+[6.237s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/requires.txt'
+[6.237s] error removing /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info: [Errno 39] Directory not empty: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info'
+[6.238s] Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+[6.238s] error: [Errno 13] Permission denied: '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info/SOURCES.txt'
+[6.403s] Invoked command in '/home/ubuntu/ros2_ws/src/locomotion' returned '1': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data

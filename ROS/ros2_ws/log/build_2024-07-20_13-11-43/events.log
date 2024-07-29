@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.002013] (-) JobUnselected: {'identifier': 'perception'}
+[0.002875] (locomotion) JobQueued: {'identifier': 'locomotion', 'dependencies': OrderedDict()}
+[0.003032] (locomotion) JobStarted: {'identifier': 'locomotion'}
+[0.098576] (-) TimerEvent: {}
+[0.199523] (-) TimerEvent: {}
+[0.300423] (-) TimerEvent: {}
+[0.401290] (-) TimerEvent: {}
+[0.502172] (-) TimerEvent: {}
+[0.603047] (-) TimerEvent: {}
+[0.703953] (-) TimerEvent: {}
+[0.804806] (-) TimerEvent: {}
+[0.905748] (-) TimerEvent: {}
+[1.006635] (-) TimerEvent: {}
+[1.107506] (-) TimerEvent: {}
+[1.208432] (-) TimerEvent: {}
+[1.309271] (-) TimerEvent: {}
+[1.410148] (-) TimerEvent: {}
+[1.511064] (-) TimerEvent: {}
+[1.611963] (-) TimerEvent: {}
+[1.712848] (-) TimerEvent: {}
+[1.813726] (-) TimerEvent: {}
+[1.914596] (-) TimerEvent: {}
+[2.015461] (-) TimerEvent: {}
+[2.116361] (-) TimerEvent: {}
+[2.217236] (-) TimerEvent: {}
+[2.318196] (-) TimerEvent: {}
+[2.420427] (-) TimerEvent: {}
+[2.523311] (-) TimerEvent: {}
+[2.624337] (-) TimerEvent: {}
+[2.725205] (-) TimerEvent: {}
+[2.826060] (-) TimerEvent: {}
+[2.926956] (-) TimerEvent: {}
+[3.027809] (-) TimerEvent: {}
+[3.128692] (-) TimerEvent: {}
+[3.229540] (-) TimerEvent: {}
+[3.330392] (-) TimerEvent: {}
+[3.431252] (-) TimerEvent: {}
+[3.532209] (-) TimerEvent: {}
+[3.633127] (-) TimerEvent: {}
+[3.733963] (-) TimerEvent: {}
+[3.834839] (-) TimerEvent: {}
+[3.935726] (-) TimerEvent: {}
+[4.036631] (-) TimerEvent: {}
+[4.137509] (-) TimerEvent: {}
+[4.238375] (-) TimerEvent: {}
+[4.339226] (-) TimerEvent: {}
+[4.440065] (-) TimerEvent: {}
+[4.540934] (-) TimerEvent: {}
+[4.641805] (-) TimerEvent: {}
+[4.742666] (-) TimerEvent: {}
+[4.843518] (-) TimerEvent: {}
+[4.944432] (-) TimerEvent: {}
+[5.045357] (-) TimerEvent: {}
+[5.146273] (-) TimerEvent: {}
+[5.247148] (-) TimerEvent: {}
+[5.348188] (-) TimerEvent: {}
+[5.449093] (-) TimerEvent: {}
+[5.549947] (-) TimerEvent: {}
+[5.650818] (-) TimerEvent: {}
+[5.751643] (-) TimerEvent: {}
+[5.852517] (-) TimerEvent: {}
+[5.953349] (-) TimerEvent: {}
+[6.054194] (-) TimerEvent: {}
+[6.155054] (-) TimerEvent: {}
+[6.255960] (-) TimerEvent: {}
+[6.356876] (-) TimerEvent: {}
+[6.457787] (-) TimerEvent: {}
+[6.558663] (-) TimerEvent: {}
+[6.659512] (-) TimerEvent: {}
+[6.760417] (-) TimerEvent: {}
+[6.861256] (-) TimerEvent: {}
+[6.962192] (-) TimerEvent: {}
+[7.063047] (-) TimerEvent: {}
+[7.163966] (-) TimerEvent: {}
+[7.264947] (-) TimerEvent: {}
+[7.365872] (-) TimerEvent: {}
+[7.466801] (-) TimerEvent: {}
+[7.567684] (-) TimerEvent: {}
+[7.668678] (-) TimerEvent: {}
+[7.769632] (-) TimerEvent: {}
+[7.870493] (-) TimerEvent: {}
+[7.971390] (-) TimerEvent: {}
+[8.072336] (-) TimerEvent: {}
+[8.173218] (-) TimerEvent: {}
+[8.274072] (-) TimerEvent: {}
+[8.374935] (-) TimerEvent: {}
+[8.475829] (-) TimerEvent: {}
+[8.576730] (-) TimerEvent: {}
+[8.677608] (-) TimerEvent: {}
+[8.778553] (-) TimerEvent: {}
+[8.879440] (-) TimerEvent: {}
+[8.980392] (-) TimerEvent: {}
+[9.081283] (-) TimerEvent: {}
+[9.182168] (-) TimerEvent: {}
+[9.283065] (-) TimerEvent: {}
+[9.384116] (-) TimerEvent: {}
+[9.485034] (-) TimerEvent: {}
+[9.586066] (-) TimerEvent: {}
+[9.687085] (-) TimerEvent: {}
+[9.788134] (-) TimerEvent: {}
+[9.889192] (-) TimerEvent: {}
+[9.990205] (-) TimerEvent: {}
+[10.091281] (-) TimerEvent: {}
+[10.192471] (-) TimerEvent: {}
+[10.293558] (-) TimerEvent: {}
+[10.394668] (-) TimerEvent: {}
+[10.477289] (locomotion) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/locomotion', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/locomotion/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/locomotion/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/locomotion', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'LC_TIME': 'C.UTF-8', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'LC_MONETARY': 'C.UTF-8', 'XILINX_XRT': '/usr', 'LC_CTYPE': 'C.UTF-8', 'PYNQ_JUPYTER_NOTEBOOKS': '/root/jupyter_notebooks', 'COLORTERM': 'truecolor', 'BOARD': 'KR260', 'DEBUGINFOD_URLS': '', 'COLCON_PREFIX_PATH': '/home/ubuntu/ros2_ws/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/share/pynq-venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/local/share/pynq-venv/bin/microblazeel-xilinx-elf/bin/', 'LC_ADDRESS': 'C.UTF-8', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'VIRTUAL_ENV_PROMPT': '(pynq-venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/home/ubuntu/ros2_ws/install/locomotion:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'SUDO_USER': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'VIRTUAL_ENV': '/usr/local/share/pynq-venv', 'PWD': '/home/ubuntu/ros2_ws/build/locomotion', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/share/pynq-venv/lib/python3.10/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1'}, 'shell': False}
+[10.494840] (-) TimerEvent: {}
+[10.595741] (-) TimerEvent: {}
+[10.696658] (-) TimerEvent: {}
+[10.797521] (-) TimerEvent: {}
+[10.898385] (-) TimerEvent: {}
+[10.999246] (-) TimerEvent: {}
+[11.100094] (-) TimerEvent: {}
+[11.200959] (-) TimerEvent: {}
+[11.301809] (-) TimerEvent: {}
+[11.402664] (-) TimerEvent: {}
+[11.503543] (-) TimerEvent: {}
+[11.604457] (-) TimerEvent: {}
+[11.705311] (-) TimerEvent: {}
+[11.806227] (-) TimerEvent: {}
+[11.907114] (-) TimerEvent: {}
+[12.008023] (-) TimerEvent: {}
+[12.108889] (-) TimerEvent: {}
+[12.209744] (-) TimerEvent: {}
+[12.310612] (-) TimerEvent: {}
+[12.411485] (-) TimerEvent: {}
+[12.512485] (-) TimerEvent: {}
+[12.613360] (-) TimerEvent: {}
+[12.628486] (locomotion) StdoutLine: {'line': b'running egg_info\n'}
+[12.633466] (locomotion) StdoutLine: {'line': b'writing ../../build/locomotion/locomotion.egg-info/PKG-INFO\n'}
+[12.634668] (locomotion) StdoutLine: {'line': b'writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt\n'}
+[12.635851] (locomotion) StdoutLine: {'line': b'writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt\n'}
+[12.636776] (locomotion) StdoutLine: {'line': b'writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt\n'}
+[12.637579] (locomotion) StdoutLine: {'line': b'writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt\n'}
+[12.705130] (locomotion) StdoutLine: {'line': b"reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'\n"}
+[12.708353] (locomotion) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[12.713572] (locomotion) StdoutLine: {'line': b"writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'\n"}
+[12.714392] (-) TimerEvent: {}
+[12.714895] (locomotion) StdoutLine: {'line': b'running build\n'}
+[12.715507] (locomotion) StdoutLine: {'line': b'running build_py\n'}
+[12.716245] (locomotion) StdoutLine: {'line': b'copying locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion\n'}
+[12.717732] (locomotion) StdoutLine: {'line': b'copying locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion\n'}
+[12.720151] (locomotion) StdoutLine: {'line': b'running install\n'}
+[12.722423] (locomotion) StdoutLine: {'line': b'running install_lib\n'}
+[12.726949] (locomotion) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion\n'}
+[12.729269] (locomotion) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion\n'}
+[12.733945] (locomotion) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/velocity_controller.py to velocity_controller.cpython-310.pyc\n'}
+[12.745104] (locomotion) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/rc_remote_control.py to rc_remote_control.cpython-310.pyc\n'}
+[12.750479] (locomotion) StdoutLine: {'line': b'running install_data\n'}
+[12.752420] (locomotion) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.761598] (locomotion) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[12.763224] (locomotion) StdoutLine: {'line': b'Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info\n'}
+[12.769450] (locomotion) StdoutLine: {'line': b'running install_scripts\n'}
+[12.814645] (-) TimerEvent: {}
+[12.894730] (locomotion) StdoutLine: {'line': b'Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[12.895617] (locomotion) StdoutLine: {'line': b'Installing rc_remote_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[12.896462] (locomotion) StdoutLine: {'line': b'Installing vel_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[12.899034] (locomotion) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'\n"}
+[12.914901] (-) TimerEvent: {}
+[13.015973] (-) TimerEvent: {}
+[13.115373] (locomotion) CommandEnded: {'returncode': 0}
+[13.117458] (-) TimerEvent: {}
+[13.196204] (locomotion) JobEnded: {'identifier': 'locomotion', 'rc': 0}
+[13.199423] (-) EventReactorShutdown: {}

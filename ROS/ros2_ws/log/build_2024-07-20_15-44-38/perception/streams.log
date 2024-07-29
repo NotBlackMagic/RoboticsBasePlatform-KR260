@@ -1,0 +1,27 @@
+[9.595s] Invoking command in '/home/ubuntu/ros2_ws/src/perception': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/ubuntu/ros2_ws/build/perception/build install --record /home/ubuntu/ros2_ws/build/perception/install.log --single-version-externally-managed install_data
+[11.769s] running egg_info
+[11.774s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[11.775s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[11.776s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[11.777s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[11.778s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[11.829s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[11.835s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[11.836s] running build
+[11.837s] running build_py
+[11.837s] copying perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.839s] copying perception/transforms.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.840s] running install
+[11.842s] running install_lib
+[11.847s] copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.848s] copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/transforms.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.851s] byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/gnss_receiver.py to gnss_receiver.cpython-310.pyc
+[11.858s] byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/transforms.py to transforms.cpython-310.pyc
+[11.861s] running install_data
+[11.863s] running install_egg_info
+[11.872s] removing '/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info' (and everything under it)
+[11.874s] Copying ../../build/perception/perception.egg-info to /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info
+[11.879s] running install_scripts
+[12.004s] Installing gnss_receiver script to /home/ubuntu/ros2_ws/install/perception/lib/perception
+[12.006s] writing list of installed files to '/home/ubuntu/ros2_ws/build/perception/install.log'
+[12.227s] Invoked command in '/home/ubuntu/ros2_ws/src/perception' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/ubuntu/ros2_ws/build/perception/build install --record /home/ubuntu/ros2_ws/build/perception/install.log --single-version-externally-managed install_data

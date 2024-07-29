@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/perception/perception.egg-info
+writing ../../build/perception/perception.egg-info/PKG-INFO
+writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+writing requirements to ../../build/perception/perception.egg-info/requires.txt
+writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/ros2_ws/build/perception/build
+creating /home/ubuntu/ros2_ws/build/perception/build/lib
+creating /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+copying perception/vision_perception.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+copying perception/__init__.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+copying perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+running install
+running install_lib
+creating /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/vision_perception.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/__init__.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/vision_perception.py to vision_perception.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/gnss_receiver.py to gnss_receiver.cpython-310.pyc
+running install_data
+creating /home/ubuntu/ros2_ws/install/perception/share/ament_index
+creating /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index
+creating /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index/packages
+copying resource/perception -> /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/ros2_ws/install/perception/share/perception
+creating /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+copying kr260_pynq/dpu.bit -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+copying kr260_pynq/dpu.hwh -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+copying kr260_pynq/dpu.xclbin -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+running install_egg_info
+Copying ../../build/perception/perception.egg-info to /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info
+running install_scripts
+Installing gnss_receiver script to /home/ubuntu/ros2_ws/install/perception/lib/perception
+writing list of installed files to '/home/ubuntu/ros2_ws/build/perception/install.log'

@@ -1,0 +1,38 @@
+[5.181s] Invoking command in '/home/ubuntu/ros2_ws/src/locomotion': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data
+[6.890s] running egg_info
+[6.895s] creating ../../build/locomotion/locomotion.egg-info
+[6.896s] writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+[6.897s] writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+[6.898s] writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+[6.899s] writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+[6.899s] writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+[6.901s] writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.911s] reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.911s] adding license file 'LICENSE'
+[6.915s] writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.916s] running build
+[6.917s] running build_py
+[6.917s] creating /home/ubuntu/ros2_ws/build/locomotion/build
+[6.918s] creating /home/ubuntu/ros2_ws/build/locomotion/build/lib
+[6.919s] creating /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.919s] copying locomotion/__init__.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.920s] copying locomotion/keyboard_control.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.920s] running install
+[6.922s] running install_lib
+[6.926s] creating /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.927s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/__init__.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.927s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/keyboard_control.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.930s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/__init__.py to __init__.cpython-310.pyc
+[6.931s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/keyboard_control.py to keyboard_control.cpython-310.pyc
+[6.936s] running install_data
+[6.937s] creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index
+[6.937s] creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index
+[6.938s] creating /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index/packages
+[6.939s] copying resource/locomotion -> /home/ubuntu/ros2_ws/install/locomotion/share/ament_index/resource_index/packages
+[6.939s] copying package.xml -> /home/ubuntu/ros2_ws/install/locomotion/share/locomotion
+[6.940s] running install_egg_info
+[6.949s] Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+[6.953s] running install_scripts
+[7.084s] Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[7.086s] writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'
+[7.283s] Invoked command in '/home/ubuntu/ros2_ws/src/locomotion' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data

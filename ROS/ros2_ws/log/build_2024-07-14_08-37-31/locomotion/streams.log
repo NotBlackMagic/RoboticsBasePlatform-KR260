@@ -1,0 +1,27 @@
+[4.468s] Invoking command in '/home/ubuntu/ros2_ws/src/locomotion': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data
+[6.200s] running egg_info
+[6.206s] writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+[6.207s] writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+[6.208s] writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+[6.209s] writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+[6.212s] writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+[6.226s] reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.228s] adding license file 'LICENSE'
+[6.234s] writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.234s] running build
+[6.235s] running build_py
+[6.236s] copying locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.242s] running install
+[6.244s] running install_lib
+[6.249s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.255s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/velocity_controller.py to velocity_controller.cpython-310.pyc
+[6.267s] running install_data
+[6.268s] running install_egg_info
+[6.277s] removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)
+[6.278s] Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+[6.283s] running install_scripts
+[6.414s] Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[6.415s] Installing rc_remote_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[6.416s] Installing vel_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[6.419s] writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'
+[6.617s] Invoked command in '/home/ubuntu/ros2_ws/src/locomotion' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data

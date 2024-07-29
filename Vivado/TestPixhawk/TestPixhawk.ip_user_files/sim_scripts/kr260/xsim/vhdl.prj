@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/kr260/ip/kr260_proc_sys_reset_0_0/sim/kr260_proc_sys_reset_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_proc_sys_reset_1_0/sim/kr260_proc_sys_reset_1_0.vhd" \
+"../../../bd/kr260/ip/kr260_proc_sys_reset_2_0/sim/kr260_proc_sys_reset_2_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_intc_0_0/sim/kr260_axi_intc_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_uartlite_0_0/sim/kr260_axi_uartlite_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_iic_0_0/sim/kr260_axi_iic_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_gpio_0_0/sim/kr260_axi_gpio_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_timer_0_0/sim/kr260_axi_timer_0_0.vhd" \
+"../../../bd/kr260/ip/kr260_axi_timer_1_0/sim/kr260_axi_timer_1_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,17 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date              : Sat Jul 20 16:09:48 2024
+| Host              : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command           : report_bus_skew -warn_on_violation -file kr260_wrapper_bus_skew_routed.rpt -pb kr260_wrapper_bus_skew_routed.pb -rpx kr260_wrapper_bus_skew_routed.rpx
+| Design            : kr260_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

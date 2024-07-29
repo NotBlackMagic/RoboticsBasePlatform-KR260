@@ -1,0 +1,6 @@
+source;share/locomotion/hook/pythonpath.ps1
+source;share/locomotion/hook/pythonpath.dsv
+source;share/locomotion/hook/pythonpath.sh
+source;share/locomotion/hook/ament_prefix_path.ps1
+source;share/locomotion/hook/ament_prefix_path.dsv
+source;share/locomotion/hook/ament_prefix_path.sh

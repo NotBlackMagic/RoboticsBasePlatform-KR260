@@ -1,0 +1,44 @@
+[9.602s] Invoking command in '/home/ubuntu/ros2_ws/src/perception': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/ubuntu/ros2_ws/build/perception/build install --record /home/ubuntu/ros2_ws/build/perception/install.log --single-version-externally-managed install_data
+[11.761s] running egg_info
+[11.766s] creating ../../build/perception/perception.egg-info
+[11.767s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[11.769s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[11.770s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[11.771s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[11.772s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[11.814s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[11.825s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[11.830s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[11.831s] running build
+[11.832s] running build_py
+[11.832s] creating /home/ubuntu/ros2_ws/build/perception/build
+[11.833s] creating /home/ubuntu/ros2_ws/build/perception/build/lib
+[11.834s] creating /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.834s] copying perception/vision_perception.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.835s] copying perception/__init__.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.835s] copying perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/build/perception/build/lib/perception
+[11.836s] running install
+[11.837s] running install_lib
+[11.842s] creating /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.842s] copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/vision_perception.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.843s] copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/__init__.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.844s] copying /home/ubuntu/ros2_ws/build/perception/build/lib/perception/gnss_receiver.py -> /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception
+[11.847s] byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/vision_perception.py to vision_perception.cpython-310.pyc
+[11.849s] byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/__init__.py to __init__.cpython-310.pyc
+[11.850s] byte-compiling /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception/gnss_receiver.py to gnss_receiver.cpython-310.pyc
+[11.853s] running install_data
+[11.854s] creating /home/ubuntu/ros2_ws/install/perception/share/ament_index
+[11.854s] creating /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index
+[11.855s] creating /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index/packages
+[11.855s] copying resource/perception -> /home/ubuntu/ros2_ws/install/perception/share/ament_index/resource_index/packages
+[11.856s] copying package.xml -> /home/ubuntu/ros2_ws/install/perception/share/perception
+[11.857s] creating /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+[11.857s] copying kr260_pynq/dpu.bit -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+[12.295s] copying kr260_pynq/dpu.hwh -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+[12.374s] copying kr260_pynq/dpu.xclbin -> /home/ubuntu/ros2_ws/install/perception/share/kr260_pynq
+[12.817s] running install_egg_info
+[12.827s] Copying ../../build/perception/perception.egg-info to /home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info
+[12.832s] running install_scripts
+[12.957s] Installing gnss_receiver script to /home/ubuntu/ros2_ws/install/perception/lib/perception
+[12.958s] writing list of installed files to '/home/ubuntu/ros2_ws/build/perception/install.log'
+[13.177s] Invoked command in '/home/ubuntu/ros2_ws/src/perception' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/ros2_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/ubuntu/ros2_ws/build/perception/build install --record /home/ubuntu/ros2_ws/build/perception/install.log --single-version-externally-managed install_data

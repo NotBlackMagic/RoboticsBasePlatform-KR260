@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jul 20 16:04:23 2024
+# Process ID: 57410
+# Current directory: /home/notblackmagic/Documents/Vivado/TestPixhawk/TestPixhawk.runs/synth_1
+# Command line: vivado -log kr260_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kr260_wrapper.tcl
+# Log file: /home/notblackmagic/Documents/Vivado/TestPixhawk/TestPixhawk.runs/synth_1/kr260_wrapper.vds
+# Journal file: /home/notblackmagic/Documents/Vivado/TestPixhawk/TestPixhawk.runs/synth_1/vivado.jou
+# Running On        :NotBlackMagic-Dekstop
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.4 LTS
+# Processor Detail  :Intel(R) Pentium(R) CPU G3258 @ 3.20GHz
+# CPU Frequency     :4000.095 MHz
+# CPU Physical cores:2
+# CPU Logical cores :2
+# Host memory       :8195 MB
+# Swap memory       :19327 MB
+# Total Virtual     :27522 MB
+# Available Virtual :19583 MB
+#-----------------------------------------------------------
+source kr260_wrapper.tcl -notrace

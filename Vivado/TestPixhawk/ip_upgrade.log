@@ -1,0 +1,512 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:18 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_zynq_ultra_ps_e_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_zynq_ultra_ps_e_0_0 (xilinx.com:ip:zynq_ultra_ps_e:3.5) from (Rev. 2) to (Rev. 3)
+
+2. Upgrade messages
+-------------------
+
+Set parameter PSU__GPIO_EMIO__PERIPHERAL__IO to value 92 (source 'default')
+WARNING: upgrade cannot add parameter PSU__USE__USB3_0_HUB with default value 0 : a parameter called PSU__USE__USB3_0_HUB already exists in zynq_ultra_ps_e_v3_5
+WARNING: upgrade cannot add parameter PSU__USE__USB3_1_HUB with default value 0 : a parameter called PSU__USE__USB3_1_HUB already exists in zynq_ultra_ps_e_v3_5
+Set parameter PSU__PROTECTION__FPD_SEGMENTS to value SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |      SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware     |     SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:18 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_xlslice_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_xlslice_0_0 (xilinx.com:ip:xlslice:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:18 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_ps8_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_ps8_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 31) to (Rev. 32)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_proc_sys_reset_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_proc_sys_reset_2_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_proc_sys_reset_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_proc_sys_reset_1_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_uartlite_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_uartlite_4_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:17 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_uartlite_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_uartlite_3_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_uartlite_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_uartlite_2_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_uartlite_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_uartlite_1_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_uartlite_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_uartlite_0_1 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_timer_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_timer_4_0 (xilinx.com:ip:axi_timer:2.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_timer_2_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_timer_2_2 (xilinx.com:ip:axi_timer:2.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_timer_2_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_timer_2_1 (xilinx.com:ip:axi_timer:2.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:16 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_timer_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_timer_0_2 (xilinx.com:ip:axi_timer:2.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_timer_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_timer_0_1 (xilinx.com:ip:axi_timer:2.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_intc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_intc_0_0 (xilinx.com:ip:axi_intc:4.1) from (Rev. 18) to (Rev. 19)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_IVAR_RESET_VALUE to value 0x0000000000000010 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_iic_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_iic_3_0 (xilinx.com:ip:axi_iic:2.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_iic_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_iic_2_0 (xilinx.com:ip:axi_iic:2.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_iic_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_iic_1_0 (xilinx.com:ip:axi_iic:2.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:15 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_iic_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_iic_0_1 (xilinx.com:ip:axi_iic:2.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 13 11:00:14 2024
+| Host         : NotBlackMagic-Dekstop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'kr260_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of kr260_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 32) to (Rev. 33)
+

@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.002034] (locomotion) JobQueued: {'identifier': 'locomotion', 'dependencies': OrderedDict()}
+[0.002887] (locomotion) JobStarted: {'identifier': 'locomotion'}
+[0.098670] (-) TimerEvent: {}
+[0.199531] (-) TimerEvent: {}
+[0.300428] (-) TimerEvent: {}
+[0.401452] (-) TimerEvent: {}
+[0.502436] (-) TimerEvent: {}
+[0.603347] (-) TimerEvent: {}
+[0.704200] (-) TimerEvent: {}
+[0.805077] (-) TimerEvent: {}
+[0.905914] (-) TimerEvent: {}
+[1.006772] (-) TimerEvent: {}
+[1.107616] (-) TimerEvent: {}
+[1.208483] (-) TimerEvent: {}
+[1.309361] (-) TimerEvent: {}
+[1.410229] (-) TimerEvent: {}
+[1.511153] (-) TimerEvent: {}
+[1.612037] (-) TimerEvent: {}
+[1.713019] (-) TimerEvent: {}
+[1.814039] (-) TimerEvent: {}
+[1.914963] (-) TimerEvent: {}
+[2.015906] (-) TimerEvent: {}
+[2.116921] (-) TimerEvent: {}
+[2.217785] (-) TimerEvent: {}
+[2.318651] (-) TimerEvent: {}
+[2.419513] (-) TimerEvent: {}
+[2.520448] (-) TimerEvent: {}
+[2.621419] (-) TimerEvent: {}
+[2.722267] (-) TimerEvent: {}
+[2.823145] (-) TimerEvent: {}
+[2.923992] (-) TimerEvent: {}
+[3.024842] (-) TimerEvent: {}
+[3.125672] (-) TimerEvent: {}
+[3.226550] (-) TimerEvent: {}
+[3.327510] (-) TimerEvent: {}
+[3.428386] (-) TimerEvent: {}
+[3.529298] (-) TimerEvent: {}
+[3.630167] (-) TimerEvent: {}
+[3.731087] (-) TimerEvent: {}
+[3.831982] (-) TimerEvent: {}
+[3.932949] (-) TimerEvent: {}
+[4.033796] (-) TimerEvent: {}
+[4.134649] (-) TimerEvent: {}
+[4.235571] (-) TimerEvent: {}
+[4.336577] (-) TimerEvent: {}
+[4.416008] (locomotion) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/locomotion', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/locomotion/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/locomotion/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/src/locomotion', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'PS1': '(pynq-venv) ${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'XILINX_XRT': '/usr', 'PYNQ_JUPYTER_NOTEBOOKS': '/root/jupyter_notebooks', 'COLORTERM': 'truecolor', 'BOARD': 'KR260', 'DEBUGINFOD_URLS': '', 'SUDO_UID': '1000', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/share/pynq-venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/local/share/pynq-venv/bin/microblazeel-xilinx-elf/bin/', 'LANG': 'C.UTF-8', 'VIRTUAL_ENV_PROMPT': '(pynq-venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/bin/bash', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'SUDO_USER': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/usr/local/share/pynq-venv', 'PWD': '/home/ubuntu/ros2_ws/build/locomotion', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[4.436774] (-) TimerEvent: {}
+[4.537822] (-) TimerEvent: {}
+[4.638699] (-) TimerEvent: {}
+[4.739641] (-) TimerEvent: {}
+[4.840541] (-) TimerEvent: {}
+[4.941462] (-) TimerEvent: {}
+[5.042349] (-) TimerEvent: {}
+[5.143216] (-) TimerEvent: {}
+[5.244147] (-) TimerEvent: {}
+[5.345124] (-) TimerEvent: {}
+[5.445979] (-) TimerEvent: {}
+[5.546900] (-) TimerEvent: {}
+[5.647743] (-) TimerEvent: {}
+[5.748604] (-) TimerEvent: {}
+[5.849496] (-) TimerEvent: {}
+[5.950365] (-) TimerEvent: {}
+[6.051317] (-) TimerEvent: {}
+[6.132466] (locomotion) StdoutLine: {'line': b'running egg_info\n'}
+[6.137946] (locomotion) StdoutLine: {'line': b'writing ../../build/locomotion/locomotion.egg-info/PKG-INFO\n'}
+[6.139102] (locomotion) StdoutLine: {'line': b'writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt\n'}
+[6.140229] (locomotion) StdoutLine: {'line': b'writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt\n'}
+[6.141108] (locomotion) StdoutLine: {'line': b'writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt\n'}
+[6.141865] (locomotion) StdoutLine: {'line': b'writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt\n'}
+[6.151477] (-) TimerEvent: {}
+[6.153499] (locomotion) StdoutLine: {'line': b"reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'\n"}
+[6.155242] (locomotion) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[6.160514] (locomotion) StdoutLine: {'line': b"writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'\n"}
+[6.161563] (locomotion) StdoutLine: {'line': b'running build\n'}
+[6.162124] (locomotion) StdoutLine: {'line': b'running build_py\n'}
+[6.162897] (locomotion) StdoutLine: {'line': b'copying locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion\n'}
+[6.166376] (locomotion) StdoutLine: {'line': b'running install\n'}
+[6.168330] (locomotion) StdoutLine: {'line': b'running install_lib\n'}
+[6.172937] (locomotion) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/velocity_controller.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion\n'}
+[6.179077] (locomotion) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/velocity_controller.py to velocity_controller.cpython-310.pyc\n'}
+[6.190677] (locomotion) StdoutLine: {'line': b'running install_data\n'}
+[6.191521] (locomotion) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.200606] (locomotion) StdoutLine: {'line': b"removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[6.202247] (locomotion) StdoutLine: {'line': b'Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info\n'}
+[6.206920] (locomotion) StdoutLine: {'line': b'running install_scripts\n'}
+[6.251691] (-) TimerEvent: {}
+[6.336831] (locomotion) StdoutLine: {'line': b'Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[6.337783] (locomotion) StdoutLine: {'line': b'Installing rc_remote_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[6.338524] (locomotion) StdoutLine: {'line': b'Installing vel_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion\n'}
+[6.341851] (locomotion) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'\n"}
+[6.351914] (-) TimerEvent: {}
+[6.452910] (-) TimerEvent: {}
+[6.534981] (locomotion) CommandEnded: {'returncode': 0}
+[6.553058] (-) TimerEvent: {}
+[6.598838] (locomotion) JobEnded: {'identifier': 'locomotion', 'rc': 0}
+[6.602182] (-) EventReactorShutdown: {}

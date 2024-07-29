@@ -1,0 +1,5 @@
+[console_scripts]
+keyboard_ctrl = locomotion.keyboard_control:main
+rc_remote_ctrl = locomotion.rc_remote_control:main
+vel_ctrl = locomotion.velocity_controller:main
+

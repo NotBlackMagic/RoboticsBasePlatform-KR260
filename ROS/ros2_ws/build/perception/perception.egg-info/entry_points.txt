@@ -1,0 +1,3 @@
+[console_scripts]
+gnss_receiver = perception.gnss_receiver:main
+

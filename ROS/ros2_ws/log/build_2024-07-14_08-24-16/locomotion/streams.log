@@ -1,0 +1,37 @@
+[4.475s] Invoking command in '/home/ubuntu/ros2_ws/src/locomotion': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data
+[6.200s] running egg_info
+[6.206s] writing ../../build/locomotion/locomotion.egg-info/PKG-INFO
+[6.207s] writing dependency_links to ../../build/locomotion/locomotion.egg-info/dependency_links.txt
+[6.208s] writing entry points to ../../build/locomotion/locomotion.egg-info/entry_points.txt
+[6.209s] writing requirements to ../../build/locomotion/locomotion.egg-info/requires.txt
+[6.209s] writing top-level names to ../../build/locomotion/locomotion.egg-info/top_level.txt
+[6.222s] reading manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.223s] adding license file 'LICENSE'
+[6.228s] writing manifest file '../../build/locomotion/locomotion.egg-info/SOURCES.txt'
+[6.229s] running build
+[6.229s] running build_py
+[6.230s] copying locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion
+[6.232s] creating /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+[6.233s] copying locomotion/Drivers/__init__.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+[6.233s] copying locomotion/Drivers/DriverIBus.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+[6.234s] copying locomotion/Drivers/DriverPWM.py -> /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers
+[6.235s] running install
+[6.237s] running install_lib
+[6.242s] creating /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+[6.243s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/__init__.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+[6.244s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/DriverIBus.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+[6.244s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/Drivers/DriverPWM.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers
+[6.245s] copying /home/ubuntu/ros2_ws/build/locomotion/build/lib/locomotion/rc_remote_control.py -> /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion
+[6.248s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/__init__.py to __init__.cpython-310.pyc
+[6.249s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/DriverIBus.py to DriverIBus.cpython-310.pyc
+[6.252s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/Drivers/DriverPWM.py to DriverPWM.cpython-310.pyc
+[6.255s] byte-compiling /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion/rc_remote_control.py to rc_remote_control.cpython-310.pyc
+[6.260s] running install_data
+[6.261s] running install_egg_info
+[6.271s] removing '/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info' (and everything under it)
+[6.273s] Copying ../../build/locomotion/locomotion.egg-info to /home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages/locomotion-0.0.1-py3.10.egg-info
+[6.277s] running install_scripts
+[6.408s] Installing keyboard_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[6.409s] Installing rc_remote_ctrl script to /home/ubuntu/ros2_ws/install/locomotion/lib/locomotion
+[6.413s] writing list of installed files to '/home/ubuntu/ros2_ws/build/locomotion/install.log'
+[6.608s] Invoked command in '/home/ubuntu/ros2_ws/src/locomotion' returned '0': PYTHONPATH=/home/ubuntu/ros2_ws/build/locomotion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/locomotion/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pynq-venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion build --build-base /home/ubuntu/ros2_ws/build/locomotion/build install --record /home/ubuntu/ros2_ws/build/locomotion/install.log --single-version-externally-managed install_data
