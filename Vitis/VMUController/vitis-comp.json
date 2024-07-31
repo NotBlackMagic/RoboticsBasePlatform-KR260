@@ -1,0 +1,18 @@
+{
+  "name": "VMUController",
+  "type": "HOST",
+  "platform": "/home/notblackmagic/Documents/Vitis/KR260/export/KR260/KR260.xpfm",
+  "domain": "freertos_psu_cortexr5_0",
+  "cpuInstance": "psu_cortexr5_0",
+  "cpuType": "cortex-r5",
+  "os": "freertos",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "freertos_psu_cortexr5_0",
+  "applicationFlow": "EMBEDDED_ACCEL",
+  "previousBuildStatusMap": {
+    "hw": "SUCCESS"
+  }
+}

@@ -1,0 +1,3 @@
+/home/notblackmagic/Documents/Vitis/VMUController/build/CMakeFiles/VMUController.elf.dir
+/home/notblackmagic/Documents/Vitis/VMUController/build/CMakeFiles/edit_cache.dir
+/home/notblackmagic/Documents/Vitis/VMUController/build/CMakeFiles/rebuild_cache.dir

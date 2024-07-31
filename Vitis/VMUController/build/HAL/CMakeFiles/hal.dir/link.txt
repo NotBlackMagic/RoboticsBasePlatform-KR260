@@ -1,0 +1,2 @@
+armr5-none-eabi-ar qc libhal.a CMakeFiles/hal.dir/gpio.c.obj
+/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin/armr5-none-eabi-ranlib libhal.a
