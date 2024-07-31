@@ -68,7 +68,7 @@ while cap.cap.isOpened():
 	# Display the captured frames
 	# cv2.imshow("Original frame", frame)
 
-	#Run through resnet
+	#Run through Yolov3
 	start = time.time()
 	print("Test DPU: Run model on current frame")
 	boxes, scores, classes = yoloV3.run(frame)
