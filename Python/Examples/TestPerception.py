@@ -13,31 +13,8 @@ import imagezmq
 import pynq_dpu
 from pynq_dpu import DpuOverlay
 
+from Drivers.DriverCapture import NBMCapture
 from Drivers.DriverDPU import NBMDPUYoloV3
-
-# Bufferless VideoCapture (https://stackoverflow.com/questions/43665208/how-to-get-the-latest-frame-from-capture-device-camera-in-opencv)
-class VideoCapture:
-	def __init__(self, name):
-		self.cap = cv2.VideoCapture(name)
-		#self.cap = cv2.VideoCapture('v4l2src device=/dev/video3 ! video/x-raw, framerate=30/1, width=640, height=480 ! appsink', cv2.CAP_GSTREAMER)
-		self.lock = threading.Lock()
-		self.t = threading.Thread(target=self._reader)
-		self.t.daemon = True
-		self.t.start()
-
-	# Grab frames as soon as they are available
-	def _reader(self):
-		while True:
-			with self.lock:
-				ret = self.cap.grab()
-			if not ret:
-				break
-
-	# Retrieve latest frame
-	def read(self):
-		with self.lock:
-			_, frame = self.cap.retrieve()
-		return _, frame
 
 # Load overlay, without downloading to PS (FPGA)
 print("Test Perception: Load Overlay")

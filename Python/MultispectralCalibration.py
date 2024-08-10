@@ -28,19 +28,19 @@ cap.cap.set(cv.CAP_PROP_CONVERT_RGB, 0.0)			# Disable conversion to RGB
 
 # Calibration values ["wh", "bl", "gr", "yl", "rd", "pr", "fr", "ir"]
 exposure = 2000
-lightCurrent = [ 50, 50, 50, 50, 50, 50, 50, 50]	# White | Blue | Green | Yellow | Red | Photo Red | Far Red | IR
+light_current = [ 50, 50, 50, 50, 50, 50, 50, 50]	# White | Blue | Green | Yellow | Red | Photo Red | Far Red | IR
 
-spectrumChannel = 1
+spectrum_channel = 1
 i = 0
 while True:
 	# Simulate time between events
 	time.sleep(.5)
 
 	# Turn light on
-	light.output(spectrumChannel, True)
+	light.output(spectrum_channel, True)
 	time.sleep(.1)
 
-	cap.awaitNewFrame()
+	cap.await_new_frame()
 
 	ret, raw = cap.read()
 	# if frame is read correctly ret is True
@@ -50,7 +50,7 @@ while True:
 
 	# Turn light off
 	time.sleep(.1)
-	light.output(spectrumChannel, False)
+	light.output(spectrum_channel, False)
 
 	# print(raw.size)
 	# print(raw.dtype)
@@ -74,22 +74,22 @@ while True:
 	# Calculate light strength in set rectangle
 	width = 75
 	height = 75
-	startPoint = (int((cols - width) / 2), int((rows - height) / 2))
-	endPoint = (startPoint[0] + width, startPoint[1] + height)
+	start_point = (int((cols - width) / 2), int((rows - height) / 2))
+	end_point = (start_point[0] + width, start_point[1] + height)
 
-	patch = bw[startPoint[1]:endPoint[1], startPoint[0]:endPoint[0]]
-	(mean, stdDev) = cv.meanStdDev(patch)
-	print("Mean: %d, StdDev: %d" % (mean[0], stdDev[0]))
+	patch = bw[start_point[1]:end_point[1], start_point[0]:end_point[0]]
+	(mean, std_dev) = cv.meanstd_dev(patch)
+	print("Mean: %d, std_dev: %d" % (mean[0], std_dev[0]))
 
-	cv.rectangle(bw, startPoint, endPoint, (255, 0, 0), 2)
+	cv.rectangle(bw, start_point, end_point, (255, 0, 0), 2)
 
-	labelPoint = (10, 30)
-	labelText = "CH: %d, Curr: %d, Exp: %d" % (spectrumChannel, lightCurrent[spectrumChannel - 1], exposure)
-	cv.putText(bw, labelText, labelPoint, cv.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0, 0), 2)
+	label_point = (10, 30)
+	label_text = "CH: %d, Curr: %d, Exp: %d" % (spectrum_channel, light_current[spectrum_channel - 1], exposure)
+	cv.putText(bw, label_text, label_point, cv.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0, 0), 2)
 
-	labelPoint = (startPoint[0] - 50, startPoint[1] + height + 10)
-	labelText = "Avg: %d, StdDev: %d" % (mean[0], stdDev[0])
-	cv.putText(bw, labelText, labelPoint, cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+	label_point = (start_point[0] - 50, start_point[1] + height + 10)
+	label_text = "Avg: %d, std_dev: %d" % (mean[0], std_dev[0])
+	cv.putText(bw, label_text, label_point, cv.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
 	# Display the captured frames
 	# frame_stack = np.hstack((bw, rgb))
@@ -125,36 +125,36 @@ while True:
 		print("Exposure: %d" % (exposure))
 	elif (key & 0xFF) == ord('d'):
 		# Increase illumination current
-		lightCurrent[spectrumChannel - 1] = lightCurrent[spectrumChannel - 1] + 5
-		if(lightCurrent[spectrumChannel - 1] > 100):
-			lightCurrent[spectrumChannel - 1] = 100
-		light.current(spectrumChannel, lightCurrent[spectrumChannel - 1])
-		print("Light: CH: %d, Curr: %d" % (spectrumChannel, lightCurrent[spectrumChannel - 1]))
+		light_current[spectrum_channel - 1] = light_current[spectrum_channel - 1] + 5
+		if(light_current[spectrum_channel - 1] > 100):
+			light_current[spectrum_channel - 1] = 100
+		light.current(spectrum_channel, light_current[spectrum_channel - 1])
+		print("Light: CH: %d, Curr: %d" % (spectrum_channel, light_current[spectrum_channel - 1]))
 	elif (key & 0xFF) == ord('a'):
 		# Decrease illumination current
-		lightCurrent[spectrumChannel - 1] = lightCurrent[spectrumChannel - 1] - 5
-		if(lightCurrent[spectrumChannel - 1] < 0):
-			lightCurrent[spectrumChannel - 1] = 0
-		light.current(spectrumChannel, lightCurrent[spectrumChannel - 1])
-		print("Light: CH: %d, Curr: %d" % (spectrumChannel, lightCurrent[spectrumChannel - 1]))
+		light_current[spectrum_channel - 1] = light_current[spectrum_channel - 1] - 5
+		if(light_current[spectrum_channel - 1] < 0):
+			light_current[spectrum_channel - 1] = 0
+		light.current(spectrum_channel, light_current[spectrum_channel - 1])
+		print("Light: CH: %d, Curr: %d" % (spectrum_channel, light_current[spectrum_channel - 1]))
 	elif (key & 0xFF) == ord('n'):
 		# Move to next spectral channel
-		spectrumChannel = spectrumChannel + 1
-		if(spectrumChannel > 8):
-			spectrumChannel = 1
-		print("Spectral Channel: %d" % (spectrumChannel))
+		spectrum_channel = spectrum_channel + 1
+		if(spectrum_channel > 8):
+			spectrum_channel = 1
+		print("Spectral Channel: %d" % (spectrum_channel))
 	elif (key & 0xFF) == ord('b'):
 		# Move to previous spectral channel
-		spectrumChannel = spectrumChannel - 1
-		if(spectrumChannel < 1):
-			spectrumChannel = 8
-		print("Spectral Channel: %d" % (spectrumChannel))
+		spectrum_channel = spectrum_channel - 1
+		if(spectrum_channel < 1):
+			spectrum_channel = 8
+		print("Spectral Channel: %d" % (spectrum_channel))
 	elif (key & 0xFF) == ord('g'):
 		# Save to file
 		chName = ["wh", "bl", "gr", "yl", "rd", "pr", "fr", "ir"]
-		path = "./capture/img%d_%s_bw.png" % (i, chName[spectrumChannel - 1])
+		path = "./capture/img%d_%s_bw.png" % (i, chName[spectrum_channel - 1])
 		cv.imwrite(path, bw)
-		path = "./capture/img%d_%s_rgb.png" % (i, chName[spectrumChannel - 1])
+		path = "./capture/img%d_%s_rgb.png" % (i, chName[spectrum_channel - 1])
 		cv.imwrite(path, rgb)
 		i += 1
 		print("Save captured images")

@@ -4,10 +4,7 @@ import serial
 import time
 import threading
 
-# Import PYNQ Stuff
-from pynq import Overlay
-
-from Drivers.DriverIBus import IBusFrame
+from locomotion.DriverIBus import IBusFrame
 
 #Import ROS stuff
 import rclpy
@@ -30,13 +27,13 @@ class RCRemoteControl(Node):
 		twist_topic = self.get_parameter("twist_topic").value
 		twist_rate = 10
 		
-		self.linear_speed_x = 10.0					# Maximum forward speed in m/s
+		self.linear_speed_x = 0.5					# Maximum forward speed in m/s
 		self.angular_speed_yaw = math.radians(18)	# Maximum turn speed in rad/s (converted from deg/s)
 
 		self.x = 0.0
 		self.th  = 0.0
 
-		# Init PYNQ Overlay and driver
+		# Init driver
 		self.iBusFrame = IBusFrame()
 		try:
 			self.rc_serial = serial.Serial(

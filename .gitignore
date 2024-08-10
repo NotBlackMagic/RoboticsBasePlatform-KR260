@@ -1,0 +1,9 @@
+ROS/ros2_ws/build/
+ROS/ros2_ws/install/
+ROS/ros2_ws/log/
+
+Vitis/VMUController/_ide
+Vitis/VMUController/build
+!Vitis/VMUController/build/VMUController.elf
+Vitis/VMUController/src/.cache
+Vitis/VMUController/src/.compile_commands

@@ -10,26 +10,27 @@ class IBusFrame:
 		self.channels = [0] * 14	#14-Channels with value between 1000 and 2000
 		self.checksum = 0			#0xFFFF - (sum of previous 30 bytes)
 
-	def Decode(self, frame):
-		#Decode packet
+	# Takes a raw IBus frame and pasrses/decodes it into its parts
+	def decode(self, frame):
+		# Decode packet
 		index = 0
-		#Header
+		# Header
 		self.protocol_length = frame[index]
 		index += 1
 		self.command_code = frame[index]
 		index += 1
-		#Channel data
+		# Channel data
 		for i in range(14):
 			self.channels[i] = frame[index]
 			index += 1
 			self.channels[i] += (frame[index] << 8)
 			index += 1
-		#Footer
+		# Footer
 		self.checksum = frame[index]
 		index += 1
 		self.checksum += (frame[index] << 8)
 		index += 1
-		#Checksum calculation and verification
+		# Checksum calculation and verification
 		checksum = 0
 		for i in range(len(frame) - 2):
 			checksum += frame[i]

@@ -24,7 +24,7 @@ class KeyboardControl(Node):
 		twist_topic = self.get_parameter("twist_topic").value
 		twist_rate = 10
 		
-		self.linear_speed_x = 2.0					# Forward speed in m/s
+		self.linear_speed_x = 0.5					# Forward speed in m/s
 		self.angular_speed_yaw = math.radians(90)	# Turn speed in rad/s (converted from deg/s)
 
 		self.x = 0.0

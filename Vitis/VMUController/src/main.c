@@ -2,7 +2,12 @@
 #include "xparameters.h"
 
 //Periperhal include
-#include "xgpio.h"
+#include "timer.h"
+#include "uart.h"
+#include "gpio.h"
+#include "pwm.h"
+
+#include "pinMapping.h"
 
 //Additional drivers include
 #include "xil_printf.h"
@@ -11,61 +16,93 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-#define	XGPIO_AXI_BASEADDRESS	XPAR_XGPIO_0_BASEADDR
-#define LED 0x01 /* Assumes bit 0 of GPIO is connected to an LED */
-#define LED_CHANNEL	1
+#include <stdio.h>
+#include <string.h>
 
-#define LED_DELAY	 1000000
+#define LED_DELAY     10000000
 
-static TaskHandle_t gpioTaskHandler;
+static TaskHandle_t gpioThreadHandler;
 
-XGpio Gpio;
+uint8_t str[128];
+uint8_t loopCnt = 0;
+void GPIOThread(void *pvParameters) {
+	const TickType_t x1second = pdMS_TO_TICKS(1000);
 
-int GpioTask(void *pvParameters) {
-    const TickType_t x1second = pdMS_TO_TICKS(1000);
+	uint8_t dc = 10;
+	while(1) {
+		//Set the LED to High
+		GPIOWrite(GPIO_LED0, 0x00);
 
-    while(1) {
-        // int data = XGpio_DiscreteRead(&GpioInput, LED_CHANNEL);
+		//Task delay
+		vTaskDelay(x1second);
 
-        //Set the LED to High
-		XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED);
+		//Clear the LED bit
+		GPIOWrite(GPIO_LED0, 0x01);
+		sprintf((char*)str, "UART Test: Loop #%d \n\r", loopCnt);
+		UARTWrite(str, strlen((char*)str));
+		loopCnt += 1;
 
-        //Task delay
-        vTaskDelay(x1second);
+		//Task delay
+		vTaskDelay(x1second);
 
-        //Clear the LED bit
-		XGpio_DiscreteClear(&Gpio, LED_CHANNEL, LED);
-
-        //Task delay
-        vTaskDelay(x1second);
-    }
+		//PWMSetDC(0, dc);
+		dc += 10;
+		if(dc >= 100) {
+			dc = 10;
+		}
+	}
 }
 
+uint32_t encTimerValue = 0;
+uint32_t encTriggerCnt = 0;
 int main() {
-    int status;
-    volatile int delay;
+	int status;
+	volatile int delay;
 
-    //Initialize the GPIO driver
-    status = XGpio_Initialize(&Gpio, XGPIO_AXI_BASEADDRESS);
+	//Initialize peripherals
+	GPIOInit();
+	UARTInit();
+	//PWMInit();
+	TIM1Init();
 
-    //Set the direction for all signals as inputs except the LED output
-    XGpio_SetDataDirection(&Gpio, LED_CHANNEL, ~LED);
+	//PWMSetFrequency(1000);
 
-    //Create FreeRTOS task
-    xTaskCreate( 	GpioTask, 					//The function that implements the task. */
-					( const char * ) "Test",    //Text name for the task, provided to assist debugging only. */
-					configMINIMAL_STACK_SIZE, 	//The stack allocated to the task. */
-					NULL, 						//The task parameter is not used, so set to NULL. */
-					tskIDLE_PRIORITY,			//The task runs at the idle priority. */
-					&gpioTaskHandler );
+	// //Create FreeRTOS task
+	// xTaskCreate( 	GPIOThread, 				//The function that implements the task. */
+	// 				( const char * ) "Test",    //Text name for the task, provided to assist debugging only. */
+	// 				1024, 						//The stack allocated to the task. (configMINIMAL_STACK_SIZE) */
+	// 				NULL, 						//The task parameter is not used, so set to NULL. */
+	// 				tskIDLE_PRIORITY,			//The task runs at the idle priority. */
+	// 				&gpioThreadHandler );
 
-    //Start the timer with a block time of 0 ticks. This means as soon as the schedule starts the timer will start running and will expire after 10 seconds
+	//Start the timer with a block time of 0 ticks. This means as soon as the schedule starts the timer will start running and will expire after 10 seconds
 	//xTimerStart( xTimer, 0 );
 
 	//Start the tasks and timer running
-	vTaskStartScheduler();
+	// vTaskStartScheduler();
 
-    while (1) {
+	while (1) {
+		//Set the LED to High
+		GPIOWrite(GPIO_LED0, 0x00);
 
-    }
+		//Task delay
+		for (delay = 0; delay < LED_DELAY; delay++);
+
+		//Clear the LED bit
+		GPIOWrite(GPIO_LED0, 0x01);
+
+		//Calculate RPM
+		//encTimerValue = TIM1GetCapture();
+		uint32_t rpm = ((100000000 * 60) / (encTimerValue * 12));
+		sprintf((char*)str, "Encoder: Value %d; Counter %d; RPM: %d \n\r", encTimerValue, encTriggerCnt, rpm);
+		UARTWrite(str, strlen((char*)str));
+
+		//Task delay
+		for (delay = 0; delay < LED_DELAY; delay++);
+	}
+}
+
+void TIM1UpdateCallback(uint32_t value) {
+	//encTimerValue = value;
+	encTriggerCnt += 1;
 }

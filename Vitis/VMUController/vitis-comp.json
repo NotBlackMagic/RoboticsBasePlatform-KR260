@@ -1,7 +1,7 @@
 {
   "name": "VMUController",
   "type": "HOST",
-  "platform": "/home/notblackmagic/Documents/Vitis/KR260/CortexR5/export/CortexR5/CortexR5.xpfm",
+  "platform": "/home/notblackmagic/Documents/Vitis/KR260/export/KR260/KR260.xpfm",
   "domain": "freertos_psu_cortexr5_0",
   "cpuInstance": "psu_cortexr5_0",
   "cpuType": "cortex-r5",

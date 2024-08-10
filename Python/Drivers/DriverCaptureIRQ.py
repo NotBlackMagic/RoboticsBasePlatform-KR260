@@ -9,14 +9,14 @@ from pynq import Interrupt
 # https://github.com/PeterOgden/ZCU104_VideoDemo/blob/master/notebooks/Mixer.ipynb
 class NBMCapture:
 	def __init__(self, timer):
-		# Save timer instance
+		#Save timer instance
 		self.timer = timer
 		self.timer_clock = 100000000
 
-		# Init Timer for Capture Input Mode
-		# Disable counter and clear interrupts
+		#Init Timer for Capture Input Mode
+		#Disable counter and clear interrupts
 		self.timer.register_map.TCSR0 = 0x0100
-		# Set capture mode with count UP mode and overwrite
+		#Set capture mode with count UP mode and overwrite
 		self.timer.register_map.TCSR0.ENT0 = 1
 		self.timer.register_map.TCSR0.ENIT0 = 1
 		self.timer.register_map.TCSR0.ARHT0 = 1
@@ -24,10 +24,9 @@ class NBMCapture:
 		self.timer.register_map.TCSR0.MDT0 = 1
 
 		# Init local variables
-		self.last_count = 0
-		self.trigger_count = 0
 		self.running = True
 		self.new_event = False
+		self.last_count = 0
 
 		self.t = threading.Thread(target=self._reader)
 		self.t.daemon = True
@@ -64,6 +63,32 @@ class NBMCapture:
 			if self.timer.register_map.TCSR0.T0INT == 1:
 				self.last_count = (self.timer.register_map.TLR0.TCLR0 * (1.0 / self.timer_clock) * 1000.0)
 				self._clear_interrupt()
-				self.trigger_count = self.trigger_count + 1
 				self.new_event = True
+	
+	async def interrupt_handler(self):
+		# Init
+		self.last_count = (self.timer.register_map.TLR0.TCLR0 * (1.0 / self.timer_clock) * 1000.0)
+		self.new_event = True
+		self._clear_interrupt()
+
+		# Handler loop
+		while self.running:
+			await self.timer.interrupt.wait()
+			self.last_count = (self.timer.register_map.TLR0.TCLR0 * (1.0 / self.timer_clock) * 1000.0)
+			self.new_event = True
+			self._clear_interrupt()
+
+#Schedule interrupt coroutine using asyncio
+#loop = asyncio.get_event_loop()
+#task = loop.create_task(capt1.InterruptHandler())
+#loop.run_until_complete(task)
+
+#loop = asyncio.get_event_loop()
+#def run_loop():
+#    loop.run_forever()
+    
+#asyncio_thread = threading.Thread(target=run_loop)
+#asyncio_thread.start()
+
+#capt1.start()
 		

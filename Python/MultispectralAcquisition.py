@@ -34,15 +34,15 @@ cap.cap.set(cv.CAP_PROP_CONVERT_RGB, 0.0)			# Disable conversion to RGB
 
 # Calibration values ["wh", "bl", "gr", "yl", "rd", "pr", "fr", "ir"]
 exposure = 2000
-lightCurrent = [ 65, 15, 15, 15, 10, 10, 5, 50]	# White | Blue | Green | Yellow | Red | Photo Red | Far Red | IR
+light_current = [ 65, 15, 15, 15, 10, 10, 5, 50]	# White | Blue | Green | Yellow | Red | Photo Red | Far Red | IR
 for j in range(8):
 	# Set light current
-	light.current(j + 1, lightCurrent[j])
+	light.current(j + 1, light_current[j])
 	# Wait time to let settings apply
 	time.sleep(1)
 
 i = 0
-spectrumChannel = 1
+spectrum_channel = 1
 while True:
 	# Go through all spectrum channels
 	rgb = []
@@ -50,13 +50,13 @@ while True:
 	for j in range(8):
 		print(j)
 
-		spectrumChannel = j + 1
+		spectrum_channel = j + 1
 
 		# Turn light on
-		light.output(spectrumChannel, True)
+		light.output(spectrum_channel, True)
 		time.sleep(.1)
 
-		cap.awaitNewFrame()
+		cap.await_new_frame()
 
 		ret, raw = cap.read()
 		# if frame is read correctly ret is True
@@ -66,7 +66,7 @@ while True:
 
 		# Turn light off
 		time.sleep(.1)
-		light.output(spectrumChannel, False)
+		light.output(spectrum_channel, False)
 
 		# Issues in conversion due to weighted average: https://docs.opencv.org/2.4/modules/imgproc/doc/miscellaneous_transformations.html#void%20cvtColor%28InputArray%20src,%20OutputArray%20dst,%20int%20code,%20int%20dstCn%29
 		rgbRaw = cv.cvtColor(raw, cv.COLOR_YUV2BGR_YUYV)
@@ -78,7 +78,7 @@ while True:
 		bw.append(bwRaw)
 
 		labelPoint = (10, 30)
-		labelText = "CH: %d, Curr: %d, Exp: %d" % (spectrumChannel, lightCurrent[spectrumChannel - 1], exposure)
+		labelText = "CH: %d, Curr: %d, Exp: %d" % (spectrum_channel, light_current[spectrum_channel - 1], exposure)
 		cv.putText(bw[j], labelText, labelPoint, cv.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0, 0), 2)
 
 		# Stream to host
@@ -87,9 +87,9 @@ while True:
 		print("Save captured images")
 
 		chName = ["wh", "bl", "gr", "yl", "rd", "dr", "fr", "ir"]
-		path = "./capture/img%d_%s_bw.png" % (i, chName[spectrumChannel - 1])
+		path = "./capture/img%d_%s_bw.png" % (i, chName[spectrum_channel - 1])
 		cv.imwrite(path, bw[j])
-		path = "./capture/img%d_%s_rgb.png" % (i, chName[spectrumChannel - 1])
+		path = "./capture/img%d_%s_rgb.png" % (i, chName[spectrum_channel - 1])
 		cv.imwrite(path, rgb[j])
 
 	row1 = np.hstack((bw[0], bw[1], bw[2]))

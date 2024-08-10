@@ -33,7 +33,7 @@ while 1:
 
 	# Decode packet
 	print("Decode iBus Frame")
-	newFrame = iBusFrame.Decode(frame)
+	newFrame = iBusFrame.decode(frame)
 
 	if newFrame:
 		# Checksum valid, passed test

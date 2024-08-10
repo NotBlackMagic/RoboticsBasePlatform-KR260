@@ -231,6 +231,8 @@ class NBMDPUYoloV3:
 			cv2.rectangle(image, (left, top), (right, bottom), color, rect_thick)
 			font_scale = 2
 			cv2.putText(image, label, (left + 5, top + 20), cv2.FONT_HERSHEY_SIMPLEX, 1, color, font_scale, cv2.LINE_AA)
+
+			print("Draw BBox #%d (%d, %d) to (%d, %d)" % (i, left, top, right, bottom))
 		return image
 
 	def evaluate(self, yolo_outputs, image_shape, class_names, anchors):

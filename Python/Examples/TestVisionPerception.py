@@ -94,12 +94,11 @@ while(True):
 
 	frame_rgbd = np.hstack((frame_depth, frame_rgb, resized))
 
-	# Show on client/KR260
-	# cv.imshow("Frame Mosaic", frame_rgbd)
-	# cv.imshow("Frame RGB-D", frame_rgba)
+	cv.imshow("Frame Mosaic", frame_rgbd)
+	cv.imshow("Frame RGB-D", frame_rgba)
 
 	# Stream to host
-	sender.send_image("KR260", frame_rgba)
+	# sender.send_image("KR260", frame_rgbd)
 
 	# cv.imshow("Depth || RGB", frame_rgbd)
 	key = cv.waitKey(50)

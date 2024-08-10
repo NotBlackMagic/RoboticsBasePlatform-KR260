@@ -8,13 +8,16 @@ class AckermannOdometry:
 		self.wheel_base = wheel_base
 
 		# Encoder specific variables
+		self.motor_encoder = False
 		self.front_encoders = False
 		self.back_encoders = False
 		self.encoder_values = np.array([0, 0, 0, 0])		# frVal, flVal, brVal, blVal
 		self.ticks_per_revolution = 0
+		self.motor_gearing_ratio = 0
 		self.wheel_circumference = 0
 		self.encoder_count = np.array([0, 0, 0, 0])
-		self.rps = np.array([0.0, 0.0, 0.0, 0.0])
+		self.motor_rps = 0.0
+		self.wheel_rps = np.array([0.0, 0.0, 0.0, 0.0])
 
 		#Scaling variables
 		self.speed_scale = np.array([0.0, 1.0])	# y = s[0] + s[1] * x
@@ -31,7 +34,14 @@ class AckermannOdometry:
 		self.twist_linear = np.array([0.0, 0.0, 0.0])	# Linear velocities (m/s): X, Y, Z (local referenced)
 		self.twist_angular = np.array([0.0, 0.0, 0.0])	# Angular Velocities (rad/s): X (roll), Y (pitch), Z (yaw) (local referenced)
 
-	def setup_encoders(self, front: bool, back: bool, ticks_per_revolution: int, wheel_circumference: float):
+	def setup_motor_encoders(self, gearing_ration: float, wheel_circumference: float):
+		# Has motor encoder
+		self.motor_encoder = True
+
+		self.motor_gearing_ratio = gearing_ration
+		self.wheel_circumference = wheel_circumference
+
+	def setup_wheel_encoders(self, front: bool, back: bool, ticks_per_revolution: int, wheel_circumference: float):
 		# Has encoders
 		self.front_encoders = front
 		self.back_encoders = back
@@ -108,7 +118,28 @@ class AckermannOdometry:
 		r = linear / angular
 		return math.atan(self.wheel_base / r)
 
-	def update_using_encoder(self, steer: float, speed: float, frVal: int = None, flVal: int = None, brVal: int = None, blVal: int = None):
+	def update_using_motor_encoder(self, steer: float, motorRPS: int):
+		# Calculate elapsed time
+		deltaTime = time.time() - self.time
+		self.time = time.time()
+
+		# Calculate RPS from motor encoder value
+		# Filter and update display Data: y(n) = A*x(n) + (1 - A)*y(n-1)
+		# Display data filter: alpha (A) = Ts / (Ts + RC), RC = 1 / (2*pi*Fc)
+		alpha = 0.557	# Around Fc ~= Fs/5
+		new_rps = motorRPS * (1.0 / self.motor_gearing_ratio)
+		self.motor_rps = alpha * new_rps + (1 - alpha) * self.motor_rps
+
+		self.twist_linear[0] = self.motor_rps * self.wheel_circumference
+
+		# Update angular twist values
+		angle = self.rc_command_steering_to_angle(steer)
+		self.twist_angular[2] = angle * (1.0 / deltaTime)
+
+		# Update pose, using odometry calculations
+		self.odometry_update(deltaTime)
+
+	def update_using_wheel_encoder(self, steer: float, speed: float, frVal: int = None, flVal: int = None, brVal: int = None, blVal: int = None):
 		# Check for encoder values, and if is valid (enabled encoders)
 		if self.front_encoders and (frVal == None or flVal == None):
 			print("Missing front wheel encoder values")
@@ -147,13 +178,13 @@ class AckermannOdometry:
 		alpha = 0.557	# Around Fc ~= Fs/5
 		# if (self.timestamp + 1.0) <= time.time():
 		new_rps = self.encoder_count[0] * (1.0 / self.ticks_per_revolution) * (1.0 / (deltaTime))
-		self.rps[0] = alpha * new_rps + (1 - alpha) * self.rps[0]
+		self.wheel_rps[0] = alpha * new_rps + (1 - alpha) * self.wheel_rps[0]
 		new_rps = self.encoder_count[1] * (1.0 / self.ticks_per_revolution) * (1.0 / (deltaTime))
-		self.rps[1] = alpha * new_rps + (1 - alpha) * self.rps[1]
+		self.wheel_rps[1] = alpha * new_rps + (1 - alpha) * self.wheel_rps[1]
 		new_rps = self.encoder_count[2] * (1.0 / self.ticks_per_revolution) * (1.0 / (deltaTime))
-		self.rps[2] = alpha * new_rps + (1 - alpha) * self.rps[2]
+		self.wheel_rps[2] = alpha * new_rps + (1 - alpha) * self.wheel_rps[2]
 		new_rps = self.encoder_count[3] * (1.0 / self.ticks_per_revolution) * (1.0 / (deltaTime))
-		self.rps[3] = alpha * new_rps + (1 - alpha) * self.rps[3]
+		self.wheel_rps[3] = alpha * new_rps + (1 - alpha) * self.wheel_rps[3]
 		self.encoder_count[0] = 0
 		self.encoder_count[1] = 0
 		self.encoder_count[2] = 0
@@ -161,17 +192,17 @@ class AckermannOdometry:
 
 		# Update linear twist values
 		# Simple update method (for now), use maximum RPS values gives forward velocity (instead of thrust)
-		max_RPS = np.max(np.abs(self.rps))
+		max_RPS = np.max(np.abs(self.wheel_rps))
 		self.twist_linear[0] = max_RPS * self.wheel_circumference
 
 		# Simple Update method (for now), mean RPS values gives forward velocity (instead of thrust)
 		# if self.front_encoders:
 		# 	if self.back_encoders:
-		# 		self.twist_linear[0] = ((self.rps[0] + self.rps[1] + self.rps[2] + self.rps[3]) / 4.0) * self.wheel_circumference
+		# 		self.twist_linear[0] = ((self.wheel_rps[0] + self.wheel_rps[1] + self.wheel_rps[2] + self.wheel_rps[3]) / 4.0) * self.wheel_circumference
 		# 	else:
-		# 		self.twist_linear[0] = ((self.rps[0] + self.rps[1]) / 2.0) * self.wheel_circumference
+		# 		self.twist_linear[0] = ((self.wheel_rps[0] + self.wheel_rps[1]) / 2.0) * self.wheel_circumference
 		# else:
-		# 	self.twist_linear[0] = ((self.rps[2] + self.rps[3]) / 2.0) * self.wheel_circumference
+		# 	self.twist_linear[0] = ((self.wheel_rps[2] + self.wheel_rps[3]) / 2.0) * self.wheel_circumference
 
 		# Use thrust to get current drive/wheel spin direction
 		# rc_twist = self.rc_command_throttle_to_speed(speed)
